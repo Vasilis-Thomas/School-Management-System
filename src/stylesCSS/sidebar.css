@@ -1,0 +1,27 @@
+
+
+.header-2{
+    -fx-border-color: linear-gradient(to bottom right, #1329a4, rgb(0, 120, 171));
+    -fx-border-width: 0 0 0 2px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.bg-color-2{
+    -fx-background-color: linear-gradient(to bottom right, #007590, #152259);
+}
+
+.nav-btn-2{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: .8px;
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-cursor: hand;
+    -fx-font-size: 18px;
+    -fx-alignment: CENTER_LEFT;
+}
+.nav-btn-2:hover{
+    -fx-border-width: 3px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffff;
+}

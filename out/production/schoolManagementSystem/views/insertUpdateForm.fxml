@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InsertUpdateController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="51.0" layoutY="32.0" text="Title" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="50.0" layoutY="76.0" text="Label1" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="80.0" />
+      <Label fx:id="label2" layoutX="60.0" layoutY="86.0" text="Label2" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="150.0" />
+      <Label fx:id="label3" layoutX="70.0" layoutY="96.0" text="Label3" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="label4" layoutX="80.0" layoutY="106.0" text="Label4" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="290.0" />
+      <TextField fx:id="field1" disable="true" layoutX="50.0" layoutY="97.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="field2" layoutX="60.0" layoutY="107.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="170.0" />
+      <TextField fx:id="field3" layoutX="70.0" layoutY="117.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="240.0" />
+      <DatePicker fx:id="field4" layoutX="43.0" layoutY="314.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="310.0" />
+      <Label fx:id="label5" layoutX="320.0" layoutY="80.0" text="Label5" AnchorPane.topAnchor="80.0" />
+      <TextField fx:id="field5" layoutX="318.0" layoutY="110.0" prefWidth="200.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="100.0" />
+      <Label fx:id="label6" layoutX="320.0" layoutY="150.0" text="Label6" AnchorPane.topAnchor="150.0" />
+      <TextField fx:id="field6" layoutX="318.0" layoutY="168.0" prefWidth="200.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="170.0" />
+      <Label fx:id="label7" layoutX="320.0" layoutY="220.0" text="Label7" AnchorPane.topAnchor="220.0" />
+      <TextField fx:id="field7" layoutX="318.0" layoutY="238.0" prefWidth="200.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="240.0" />
+      <TextArea fx:id="textArea1" layoutX="430.0" layoutY="215.0" prefHeight="120.0" prefWidth="200.0" visible="false" wrapText="true" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="170.0" />
+      <ComboBox fx:id="combobox1" layoutX="320.0" layoutY="310.0" prefHeight="25.0" prefWidth="90.0" promptText="combobox1" AnchorPane.topAnchor="310.0" />
+      <ComboBox fx:id="combobox2" layoutX="330.0" layoutY="320.0" prefHeight="25.0" prefWidth="90.0" promptText="combobox2" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="310.0" />
+      <Button fx:id="btn" layoutX="456.0" layoutY="354.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Button" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="80.0" />
+   </children>
+</AnchorPane>

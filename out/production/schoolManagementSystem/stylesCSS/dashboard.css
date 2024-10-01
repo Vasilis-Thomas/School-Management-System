@@ -1,0 +1,50 @@
+.white-bg{
+    -fx-background-color: #fff;
+}
+
+.radius{
+    -fx-background-radius: 5px;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+
+.shadow-border {
+    -fx-border-color:  blue;
+}
+
+.label {
+    -fx-font-size: 24;
+}
+
+.label-textOverall {
+    -fx-font-weight: bold;
+    -fx-text-fill: #64c83c;
+}
+
+.label-title {
+    -fx-font-size: 28;
+    -fx-text-fill: #4F4F4F;
+}
+
+#labelDashboardTitle {
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+}
+
+.button-about {
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5,0,0,0);
+    -fx-cursor: hand;
+}
+
+.button-support {
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-background-color: #152259;
+    -fx-background-radius: 20px;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 180px;
+    -fx-cursor: hand;
+}

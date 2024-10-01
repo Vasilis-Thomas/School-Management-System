@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboard_form" stylesheets="@tableView.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TextField layoutX="30.0" layoutY="40.0" prefHeight="52.0" prefWidth="488.0" promptText="Search" styleClass="search" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+            </TextField>
+            <ChoiceBox layoutX="580.0" layoutY="30.0" prefWidth="150.0" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0" />
+            <ChoiceBox layoutX="780.0" layoutY="43.0" prefWidth="150.0" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0" />
+            <ChoiceBox layoutX="980.0" layoutY="43.0" prefWidth="150.0" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0" />
+            <Button layoutX="1309.0" layoutY="30.0" mnemonicParsing="false" styleClass="btn-export" text="EXPORT" AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="1433.0" layoutY="30.0" mnemonicParsing="false" styleClass="btn-add" text="ADD ... " AnchorPane.bottomAnchor="30.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="radius" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="151.0" prefHeight="915.0" prefWidth="1674.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="130.0">
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="radius" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="889.0" prefWidth="1240.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+                  <String fx:value="radius" />
+               </styleClass>
+               <children>
+                  <TableView fx:id="dashboad_tableView" layoutX="13.0" layoutY="41.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="41.0">
+                     <columns>
+                        <TableColumn fx:id="dashboad_col_appointmentID" prefWidth="101.0" text="Field" />
+                        <TableColumn fx:id="dashboad_col_name" prefWidth="68.0" text="Field" />
+                        <TableColumn fx:id="dashboad_col_description" prefWidth="71.0" text="Field" />
+                        <TableColumn fx:id="dashboad_col_appointmentDate" prefWidth="83.0" text="Field" />
+                        <TableColumn fx:id="dashboad_col_status" prefWidth="83.0" text="Field" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <styleClass>
+                        <String fx:value="column-header" />
+                        <String fx:value="column-header-background" />
+                        <String fx:value="table-view" />
+                     </styleClass>
+                  </TableView>
+                  <Label layoutX="13.0" layoutY="14.0" styleClass="header-1" text="Table">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1274.0" layoutY="13.0" prefHeight="889.0" prefWidth="385.0" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="... Details">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="75.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="100.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="155.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="180.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="235.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="260.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="315.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="340.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="395.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="420.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="475.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="500.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="555.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="580.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="635.0" text="Field" textFill="#555555" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="660.0" text="TEXT" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="74.0" layoutY="806.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="95.0" styleClass="btn-edit" text="EDIT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="60.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="230.0" layoutY="806.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" styleClass="btn-delete" text="DELETE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
