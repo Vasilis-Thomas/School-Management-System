@@ -39,14 +39,15 @@ To run this application, ensure you have the following installed:
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/Vasilis-Thomas/School-Management-System.git
-    cd schoolManagementSystem
+    cd School-Management-System
     ```
 
 2. **Setup PostgreSQL Database**:
+   - Adjust the environment variables defined in `.env` that are used to setup and deploy the PostgreSQL container.
     ```bash
     docker-compose up -d
     ```
-3. **Running the Application**:
+4. **Running the Application**:
    ```bash
    java -jar target/schoolManagementSystem.jar
     ```
@@ -57,7 +58,7 @@ To run this application, ensure you have the following installed:
   <table>
     <tr>
       <td align="center">
-        <img src="images/DB_connection2.png" alt="Original Image" width="800"/><br/>
+        <img src="images/DB_connection.png" alt="Original Image" width="800"/><br/>
       </td>
       <td align="center">
         <img src="images/DB_connection2.png" alt="Edge Detection (cleared image)" width="800"/><br/>
